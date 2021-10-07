@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 210 297" style="enable-background:new 0 0 210 297;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;stroke:#3C3C3B;stroke-width:1.1589;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);fill:#FAB51C;}
+	.st2{clip-path:url(#SVGID_2_);fill:#E30917;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'Arial-BoldMT';}
+	.st6{font-size:19.7009px;}
+	.st7{fill:#3C3C3B;}
+	.st8{font-size:27.813px;}
+	.st9{clip-path:url(#SVGID_2_);fill:none;stroke:#3C3C3B;stroke-width:3.4766;stroke-miterlimit:10;}
+	.st10{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.271;stroke-miterlimit:10;}
+	
+		.st11{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.271;stroke-miterlimit:10;stroke-dasharray:13.9467,13.9467;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="-85,316.63 295.05,316.63 295.05,-18 -85,-18 -85,316.63 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon class="st0" points="293.88,315.16 -84.71,315.16 -84.71,-17.72 293.88,-17.72 293.88,315.16 		"/>
+		<polygon class="st1" points="167.78,203.91 -21.08,203.91 -21.08,38.77 167.78,38.77 167.78,203.91 		"/>
+		<polygon class="st2" points="104.44,148.57 41.39,148.57 41.39,93.24 104.44,93.24 104.44,148.57 		"/>
+		<g class="st3">
+			<text transform="matrix(1.0029 0 0 1 54.7323 126.5737)"><tspan x="0" y="0" class="st4 st5 st6">10</tspan><tspan x="21.99" y="0" class="st4 st5 st6">0</tspan></text>
+		</g>
+		<g class="st3">
+			<text transform="matrix(1.0029 0 0 1 10.7402 184.1519)"><tspan x="0" y="0" class="st7 st5 st8">X</tspan><tspan x="18.55" y="0" class="st7 st5 st8"> </tspan><tspan x="26.36" y="0" class="st7 st5 st8">=</tspan><tspan x="42.6" y="0" class="st7 st5 st8"> </tspan><tspan x="50.41" y="0" class="st7 st5 st8">97</tspan><tspan x="81.13" y="0" class="st7 st5 st8">,</tspan><tspan x="88.94" y="0" class="st7 st5 st8">4</tspan></text>
+		</g>
+		<line class="st9" x1="11.75" y1="155.82" x2="29.48" y2="155.82"/>
+		<polyline class="st10" points="168.36,197.83 168.36,204.78 161.39,204.78 		"/>
+		<line class="st11" x1="148.03" y1="204.78" x2="-6.26" y2="204.78"/>
+		<polyline class="st10" points="-12.94,204.78 -19.92,204.78 -19.92,197.83 		"/>
+		<line class="st11" x1="-19.92" y1="183.92" x2="-19.92" y2="53.84"/>
+		<polyline class="st10" points="-19.92,47.17 -19.92,40.22 -12.94,40.22 		"/>
+		<line class="st11" x1="0.42" y1="40.22" x2="154.71" y2="40.22"/>
+		<polyline class="st10" points="161.39,40.22 168.36,40.22 168.36,47.17 		"/>
+		<line class="st11" x1="168.36" y1="60.79" x2="168.36" y2="190.87"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,170 @@
+---
+title: "Analyse Territoriale Multiscalaire"
+subtitle: "Présentation du package mta et son contexte de production"
+author:  
+- "Ronan Ysebaert"
+date: "Dernière mise à jour: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ["default", "css/styles.css", "css/rutgers-tidyverse.css","css/rutgers-fonts_og.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, crayon.enabled = TRUE)
+knitr::opts_chunk$set(cache = TRUE,
+                      fig.align='center',
+                      message = FALSE,
+                      warning = TRUE)
+# install.packages("devtools")
+# devtools::install_github("gadenbuie/countdown")
+# devtools::install_github("mitchelloharawild/icons")
+library(countdown)
+library(icons)
+#download_fontawesome()
+```
+
+#  Objectifs ?
+
+- Présentation du concept de l'analyse territoriale multiscalaire
+- Historique des travaux
+- Arrivée de mta
+- Cas d'étude
+
+---
+
+
+# Concept
+
+
+---
+
+## Contexte général
+
+.center[
+<img src="figures/concept1.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+
+
+---
+
+## Contexte général
+
+.center[
+<img src="figures/concept2.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+
+---
+
+## Contexte général
+
+.center[
+<img src="figures/concept3.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+
+---
+
+## Contexte général
+
+.center[
+<img src="figures/concept4.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte territorial
+
+.center[
+<img src="figures/concept5.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte territorial
+
+.center[
+<img src="figures/concept6.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte territorial
+
+.center[
+<img src="figures/concept7.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte spatial
+
+.center[
+<img src="figures/concept8.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte spatial
+
+.center[
+<img src="figures/concept9.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+---
+
+## Contexte spatial
+
+.center[
+<img src="figures/concept10.PNG" width="500" />
+
+.leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+
+---
+
+
+# History
+
+hyp3 : https://www.espon.eu/sites/default/files/attachments/D3_Draft-User-Manual_11.pdf
+
+
+---
+
+## Des questions ?
+
+<p style="font-weight: bold; font-size: 18pt;text-align:center;">ronan.ysebaert@cnrs.fr</p>
+
