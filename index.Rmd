@@ -157,12 +157,115 @@ library(icons)
 ---
 
 
-# History
+# Historique
 
 hyp3 : https://www.espon.eu/sites/default/files/attachments/D3_Draft-User-Manual_11.pdf
 
 
 ---
+
+## 15 ans de recherche interdisciplinaire
+
+- **1990's** : Travaux de C. Grasland ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
+
+- **2000** Création du groupe de recherche HyperCarte
+<img src="figures/steamer.png" width="100" /><img src="figures/mescal.png" width="100" /><img src="figures/geo_cites.png" width="100" /><img src="figures/riate.png" width="100" />
+
+- **2006** : Première version d'HyperAtlas. 
+
+- **2011** : Deuxième version d'HyperAtlas. Implémentations multiples. 
+
+- **2015** : Fin du groupe de recherche HyperCarte, travaux résumés dans un [site Web](http://hypercarte.imag.fr/) (Le Rubrus, 2015).
+
+- **2017** : Création du package R [`MTA`](https://cran.r-project.org/web/packages/MTA/index.html), par le RIATE. 
+
+- **2021** : [ESPON HyperAtlas 3.0](https://www.espon.eu/HyperAtlas-3.0) (ÖIR).
+
+- **2021** : Mise à jour de [`MTA`], version 0.3.0 ; création d'une fiche Rzine. 
+
+---
+
+## Implémentations multiples 
+
+
+---
+
+## Retour sur expérience d'HyperAtlas
+
+.pull-left[
+
+- Concept de l'analyse multiscalaire facilement appréhendable par une diversité d'acteurs. Beaucoup de demandes d'implémentation.
+
+- Une application clic-bouton mûrement réfléchie (parcours utilisateur).
+
+- Un projet interdisciplinaire par essence. 
+]
+
+.pull-right[
+
+- Application vieillissante (ergonomie).
+
+- Processus de création d'un .hyp (données d'entrée d'HyperAtlas) assez coûteux. 
+
+- Une application qui dépend du développement successif de plusieurs ingénieurs (difficile à faire évoluer).
+
+- Export vectoriel des cartes et graphiques impossible sous HyperAtlas. 
+]
+
+--
+
+**Nécessité de trouver une alternative pour les travaux et analyses exploratoires à toute personne intéressée par ce cadre conceptuel. 
+
+---
+
+# MTA
+
+--
+
+## Le package MTA
+
+.pull-left[
+
+- Déposé sur le CRAN en mars 2017. 
+
+- 10 fonctions : gdev, tdev, sdev, bidev, mst, mas, map_bidev, map_mst, plot_bidev, plot_mst 
+
+- Un jeu de données d'exemple (inégalités de revenu sur la Métropole du Grand Paris).
+
+- 2 vignettes explicatives (concepts théoriques et application)
+
+]
+
+.pull-right[
+
+<img src="figures/mta_package.PNG" width="500" />
+]
+
+
+---
+
+## Développement
+
+```{r, echo = FALSE, eval = FALSE, results='hide'}
+library(deepdep)
+dep <- deepdep("MTA", depth = 6)
+png("figures/deps.png", width  = 600, height = 450)
+plot_dependencies(dep, "circular", same_level = TRUE, reverse = TRUE, main = 'toto')
+dev.off()
+```
+
+.center[
+<img src="img/deps.png" width=600px class="center"/>
+]
+
+
+---
+## Evolution du package
+
+
+
+
+- Postez des issues ! 
 
 ## Des questions ?
 
