@@ -1,8 +1,8 @@
 ---
 title: "Analyse Territoriale Multiscalaire"
-subtitle: "Présentation du package R MTA, son contexte de production et son usage"
+subtitle: "Contexte de production et usage du package R MTA"
 author:  
-- "Ronan Ysebaert"
+- "Ronan Ysebaert - UMS RIATE, Université de Paris"
 date: "Dernière mise à jour: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -19,8 +19,6 @@ output:
 editor_options: 
   chunk_output_type: console
 ---
-
-
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, crayon.enabled = TRUE)
@@ -179,7 +177,7 @@ class: inverse middle center
 
 .medium[
 
-- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
+- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097))
 
 - **1996** Création du groupe de recherche HyperCarte
 
@@ -187,9 +185,9 @@ class: inverse middle center
 <img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
-- **2006** : Première version d'HyperAtlas. 
+- **2006** : Première version d'HyperAtlas 
 
-- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations). 
+- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations)
 ]
 ]
 
@@ -209,7 +207,7 @@ class: inverse middle center
 
 .medium[
 
-- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
+- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097))
 
 - **1996** Création du groupe de recherche HyperCarte
 
@@ -217,11 +215,11 @@ class: inverse middle center
 <img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
-- **2006** : Première version d'HyperAtlas. 
+- **2006** : Première version d'HyperAtlas 
 
-- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations). 
+- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations) 
 
-- **2015** : Fin du groupe de recherche HyperCarte. Travaux résumés dans un [site Web](http://hypercarte.imag.fr/) (Le Rubrus, 2015).
+- **2015** : Fin du groupe de recherche HyperCarte. Travaux résumés dans un [site Web](http://hypercarte.imag.fr/) (Le Rubrus, 2015)
 ]
 ]
 
@@ -242,7 +240,7 @@ class: inverse middle center
 
 .medium[
 
-- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
+- **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097))
 
 - **1996** Création du groupe de recherche HyperCarte
 
@@ -250,11 +248,11 @@ class: inverse middle center
 <img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
-- **2006** : Première version d'HyperAtlas. 
+- **2006** : Première version d'HyperAtlas 
 
-- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations). 
+- **2011** : Seconde version d'HyperAtlas (nouveaux outils statistiques, implémentation de la carte de synthèse - 2 déviations) 
 
-- **2015** : Fin du groupe de recherche HyperCarte. Travaux résumés dans un [site Web](http://hypercarte.imag.fr/) (Le Rubrus, 2015).
+- **2015** : Fin du groupe de recherche HyperCarte. Travaux résumés dans un [site Web](http://hypercarte.imag.fr/) (Le Rubrus, 2015)
 
 - **2021** : [ESPON HyperAtlas 3.0](https://www.espon.eu/HyperAtlas-3.0) (ÖIR) : nouveau design, connexion à la base de données ESPON... 
 ]
@@ -288,7 +286,7 @@ class: inverse middle center
 ]
 
 .right-column[
-- Une application clic-bouton mûrement réfléchie (parcours utilisateur).
+- Une application clic-bouton mûrement réfléchie (parcours utilisateur)
 
 - Un projet interdisciplinaire par essence
 
@@ -305,21 +303,21 @@ class: inverse middle center
 
 .right-column[
 
-- Application vieillissante (ergonomie).
+- Application vieillissante (ergonomie)
 
-- Processus de création d'un .hyp (données d'entrée d'HyperAtlas) assez coûteux. 
+- Processus de création d'un .hyp (données d'entrée d'HyperAtlas) assez coûteux 
 
-- Une application qui dépend du développement successif de plusieurs ingénieurs (difficile à faire évoluer).
+- Une application qui dépend du développement successif de plusieurs ingénieurs (difficile à faire évoluer)
 
-- Export vectoriel des cartes et graphiques impossible sous HyperAtlas. 
+- Export vectoriel des cartes et graphiques impossible sous HyperAtlas 
 <br><br><br>
 ]
 ]
 
 --
 
-- Proposer une **alternative** technique pour mener ce type d'analyses : R.  
-- **Ouvrir le code et les méthodes** pour rendre possible d'éventuelles contributions ultérieures. 
+- Proposer une **alternative** technique pour mener ce type d'analyses : R  
+- **Ouvrir le code et les méthodes** pour rendre possible d'éventuelles contributions ultérieures 
 
 ---
 
@@ -329,7 +327,7 @@ class: inverse middle center
 
 - **M**ultiscalar **T**erritorial **A**nalysis
 
-- Déposé sur le CRAN en mars 2017.
+- Déposé sur le CRAN en mars 2017
 
 - 10 fonctions : `gdev()`, `tdev()`, `sdev()`, `bidev()`, `mst()`, `mas()`, `map_bidev()`, `map_mst()`, `plot_bidev()`, `plot_mst()` 
 
@@ -374,16 +372,16 @@ plot_dependencies(dep, "tree", same_level = TRUE, reverse = TRUE)
 
 ### Thématique
 
-- **Définir un indicateur défini par la variable Z = V/P**, qui correspond à un modèle d'allocation d'une ressource par rapport à une population de référence. La référence implicite de ce type d'analyse étant l'équirépartition. 
+- **Définir un indicateur défini par la variable Z = V/P**, qui correspond à un modèle d'allocation d'une ressource par rapport à une population de référence. La référence implicite de ce type d'analyse étant l'équirépartition 
 
-- **Identifier des contextes territoriaux** qui font sens d'un point de vue thématique ou politique. 
+- **Identifier des contextes territoriaux** qui font sens d'un point de vue thématique ou politique 
 
 
 ### Technique
 
-- **Jeu de données** : disposer d'un numérateur, d'un dénominateur et d'une variable d'appartenance territoriale. 
+- **Jeu de données** : disposer d'un numérateur, d'un dénominateur et d'une variable d'appartenance territoriale 
 
-- Des **Géométries** associées au jeu de données (calcul de la déviation spatiale : objet `sf`).  
+- Des **Géométries** associées au jeu de données (calcul de la déviation spatiale : objet `sf`) 
 
 ]
 
@@ -436,11 +434,11 @@ mf_map(epci, col = NA, border = "black", add = TRUE)
 .pull-left[
 ## Librairies utilisées
 
-**MTA** : Calcul des déviations, représentations graphiques de synthèse des déviations.
+**MTA** : Calcul des déviations, représentations graphiques de synthèse des déviations
 
-**sf** : Manipulation de données spatiales. 
+**sf** : Manipulation de données spatiales 
 
-**mapsf** : Représentations cartographiques. 
+**mapsf** : Représentations cartographiques 
 
 ```{r}
 library(MTA)
@@ -452,7 +450,7 @@ library(mapsf)
 .pull-right[
 ## Le jeu de données
 
-**Couverture géographique / maille territoriale** : Communes appartenant à une des 22 métropoles françaises (Source [IGN, 2021](https://geoservices.ign.fr/contoursiris) / [INSEE, 2021](https://www.insee.fr/fr/information/2028028)).
+**Couverture géographique / maille territoriale** : Communes appartenant à une des 22 métropoles françaises (Source [IGN, 2021](https://geoservices.ign.fr/contoursiris) / [INSEE, 2021](https://www.insee.fr/fr/information/2028028))
 
 **Un numérateur** : Emplois au lieu de travail en 2016 (Source : [INSEE, 2021](https://www.insee.fr/fr/statistiques/4171446?sommaire=4171473))
 
@@ -1325,9 +1323,9 @@ print(bib[key = c("grasland1997", "ysebaert2011", "grasland2004", "ysebaert2021"
 <br><br>
 
 .medium[
-Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan) et [R Markdown](https://rmarkdown.rstudio.com/).
+Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan) et [R Markdown](https://rmarkdown.rstudio.com/)
 
-*css* s'inspirant du thème [css rutgers](https://github.com/jvcasillas/ru_xaringan) et diverses adaptations proposées par [@oliviergimenez](https://github.com/oliviergimenez).
+*css* s'inspirant du thème [css rutgers](https://github.com/jvcasillas/ru_xaringan) et diverses adaptations proposées par [@oliviergimenez](https://github.com/oliviergimenez)
 ]
 ]
 
@@ -1338,7 +1336,7 @@ Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan) et [
 |                                                                                                            |                                   |
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
 | `r icons::fontawesome("envelope")` | [ronan.ysebaert@cnrs.fr](mailto:ronan.ysebaert@cnrs.fr)       |
-| `r icons::fontawesome("home")` | [riate.cnrs.fr/](https://riate.cnrs.fr/) |
+| `r icons::fontawesome("home")` | [riate.cnrs.fr](https://riate.cnrs.fr/) |
 | `r icons::fontawesome("gitlab")` | [gitlab.huma-num.fr/rysebaert](https://gitlab.huma-num.fr/rysebaert)                         |
 | `r icons::fontawesome("github")` | [@rysebaert](https://github.com/rysebaert) |
 | `r icons::fontawesome("file-powerpoint")` | [rysebaert.github.io/mta_geoteca](https://rysebaert.github.io/mta_geoteca) 
