@@ -1342,6 +1342,6 @@ Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan) et [
 | `r icons::fontawesome("gitlab")` | [gitlab.huma-num.fr/rysebaert](https://gitlab.huma-num.fr/rysebaert)                         |
 | `r icons::fontawesome("github")` | [@rysebaert](https://github.com/rysebaert) |
 | `r icons::fontawesome("file-powerpoint")` | [rysebaert.github.io/mta_geoteca](https://rysebaert.github.io/mta_geoteca) 
-| `r icons::fontawesome("r-project")` | [rysebaert.github.io/mta_geoteca/script](https://github.com/rysebaert/mta_geoteca/script.R) 
+| `r icons::fontawesome("r-project")` | [github.com/rysebaert/mta_geoteca/script.R](https://github.com/rysebaert/mta_geoteca/blob/main/script.R) 
 
 ]]
