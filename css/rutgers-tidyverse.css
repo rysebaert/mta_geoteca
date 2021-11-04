@@ -26,21 +26,21 @@ a, a > code {
 
 /* color tweak */
 .inverse {
-  background-color: #272822;
-  color: #777872;
+  background-color: #395F94;
+  color: #f3f3f3;
   text-shadow: 0 0 20px #333;
 }
 
 /* slightly spacing change */
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #f3f3f3;
+  color: #ffffff;
   line-height: 1.0em;
 }
 
 /* Two-column layout (slightly wider for aspect ration) */
 .left-column {
   color: #777;
-  width: 25%;
+  width: 15%;
   height: 92%;
   float: left;
 }
@@ -51,19 +51,19 @@ a, a > code {
 
 /* slightly thiner to suppor aspect ration */
 .right-column {
-  width: 70%;
+  width: 85%;
   float: right;
   padding-top: 1em;
 }
 
 .pull-left {
   float: left;
-  width: 45%;
+  width: 46%;
 }
 
 .pull-right {
   float: right;
-  width: 45%;
+  width: 46%;
 }
 
 .pull-right ~ * {
@@ -114,9 +114,9 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* Add image and change bg color */
 .title-slide {
-  background-image: url(../figures/logo.gif), url(../figures/logo.gif) ;
-  background-position: 13% 35%;
-  background-size: 95px;
+  background-image: url(../fig/MTA.png), url(../fig/MTA.png) ;
+  background-position: 10% 35%;
+  background-size: 150px;
   background-color: #fff;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
@@ -136,7 +136,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* H2 fonts */
 .title-slide h2 {
-  color: #cc0033;
+  color: #395F94;
   font-size: 35px;
   text-align: left;
   text-shadow: none;
@@ -167,7 +167,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* section divider red */
 .title-slide-section-red {
-  background-color: #cc0033;
+  background-color: #395F94;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
 
@@ -204,7 +204,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 }
 
 .title-slide-final h1 {
-  color: #cc0033;
+  color: #395F94;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~*/
@@ -255,7 +255,7 @@ strong {
 
 /* Color adjustments to headers */
 h1 {
-  color: #cc0033;
+  color: #395F94;
 }
 
 h3 {
@@ -274,7 +274,7 @@ ru-blockquote {
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
-  border-left: solid 10px #cc0033;
+  border-left: solid 10px #395F94;
   background-color: #818181;
   padding: 1em;
   color: #fff;

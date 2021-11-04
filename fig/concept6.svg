@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 210 297" style="enable-background:new 0 0 210 297;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#86C381;}
+	.st1{clip-path:url(#SVGID_2_);fill:#FAD3CD;}
+	.st2{clip-path:url(#SVGID_2_);fill:#CDD6EC;}
+	.st3{clip-path:url(#SVGID_2_);fill:#F6F1BF;}
+	.st4{clip-path:url(#SVGID_2_);fill:#E30917;}
+	.st5{clip-path:url(#SVGID_2_);}
+	.st6{fill:#FFFFFF;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:22.0211px;}
+	.st9{fill:#3C3C3B;}
+	.st10{font-size:27.8162px;}
+	.st11{clip-path:url(#SVGID_2_);fill:none;stroke:#3C3C3B;stroke-width:3.477;stroke-miterlimit:10;}
+	.st12{clip-path:url(#SVGID_2_);fill:none;stroke:#3C3C3B;stroke-width:1.159;stroke-miterlimit:10;}
+	.st13{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.2721;stroke-miterlimit:10;}
+	
+		.st14{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.2721;stroke-miterlimit:10;stroke-dasharray:13.9479,13.9479;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="-88,317.25 296.44,317.25 296.44,-20 -88,-20 -88,317.25 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon class="st0" points="105.53,149.78 -83.35,149.78 -83.35,-15.38 105.53,-15.38 105.53,149.78 		"/>
+		<polygon class="st1" points="294.99,149.78 106.11,149.78 106.11,-15.38 294.99,-15.38 294.99,149.78 		"/>
+		<polygon class="st2" points="294.99,315.81 105.82,315.81 105.82,150.65 294.99,150.65 294.99,315.81 		"/>
+		<polygon class="st3" points="105.53,315.81 -83.35,315.81 -83.35,150.65 105.53,150.65 105.53,315.81 		"/>
+		<polygon class="st4" points="105.82,150.07 42.76,150.07 42.76,94.73 105.82,94.73 105.82,150.07 		"/>
+		<g class="st5">
+			<text transform="matrix(1.0029 0 0 1 56.0965 130.1396)"><tspan x="0" y="0" class="st6 st7 st8">10</tspan><tspan x="24.36" y="0" class="st6 st7 st8">0</tspan></text>
+		</g>
+		<g class="st5">
+			<text transform="matrix(1.0029 0 0 1 -45.5441 60.4912)"><tspan x="0" y="0" class="st9 st7 st10">X</tspan><tspan x="18.55" y="0" class="st9 st7 st10"> </tspan><tspan x="26.36" y="0" class="st9 st7 st10">=</tspan><tspan x="42.61" y="0" class="st9 st7 st10"> </tspan><tspan x="50.42" y="0" class="st9 st7 st10">104</tspan><tspan x="96.5" y="0" class="st9 st7 st10">,</tspan><tspan x="104.31" y="0" class="st9 st7 st10">1</tspan></text>
+		</g>
+		<line class="st11" x1="-44.99" y1="32.14" x2="-27.27" y2="32.14"/>
+		<polygon class="st12" points="105.53,149.78 -83.06,149.78 -83.06,-15.38 105.53,-15.38 105.53,149.78 		"/>
+		<polygon class="st12" points="294.99,149.78 105.53,149.78 105.53,-15.38 294.99,-15.38 294.99,149.78 		"/>
+		<polygon class="st12" points="294.99,315.52 105.53,315.52 105.53,150.07 294.99,150.07 294.99,315.52 		"/>
+		<polygon class="st12" points="105.53,315.52 -83.06,315.52 -83.06,150.07 105.53,150.07 105.53,315.52 		"/>
+		<polyline class="st13" points="105.53,144.85 105.53,151.81 98.55,151.81 		"/>
+		<line class="st14" x1="84.9" y1="151.81" x2="-69.98" y2="151.81"/>
+		<polyline class="st13" points="-76.67,151.81 -83.64,151.81 -83.64,144.85 		"/>
+		<line class="st14" x1="-83.64" y1="130.95" x2="-83.64" y2="-1.18"/>
+		<polyline class="st13" points="-83.64,-8.13 -83.64,-15.09 -76.67,-15.09 		"/>
+		<line class="st14" x1="-63.3" y1="-15.09" x2="91.87" y2="-15.09"/>
+		<polyline class="st13" points="98.55,-15.09 105.53,-15.09 105.53,-8.13 		"/>
+		<line class="st14" x1="105.53" y1="5.77" x2="105.53" y2="137.9"/>
+	</g>
+</g>
+</svg>

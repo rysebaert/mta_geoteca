@@ -1,13 +1,13 @@
 ---
 title: "Analyse Territoriale Multiscalaire"
-subtitle: "Présentation du package mta et son contexte de production"
+subtitle: "Présentation du package R MTA, son contexte de production et son usage"
 author:  
 - "Ronan Ysebaert"
 date: "Dernière mise à jour: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     self_contained: true
-    css: ["default", "css/styles.css", "css/rutgers-tidyverse.css","css/rutgers-fonts_og.css"]
+    css: ["css/styles.css", "css/rutgers-tidyverse.css","css/rutgers-fonts_og.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -27,7 +27,8 @@ options(htmltools.dir.version = FALSE, crayon.enabled = TRUE)
 knitr::opts_chunk$set(cache = TRUE,
                       fig.align='center',
                       message = FALSE,
-                      warning = TRUE)
+                      warning = TRUE,
+                      Encoding = "UTF-8")
 # install.packages("devtools")
 # devtools::install_github("gadenbuie/countdown")
 # devtools::install_github("mitchelloharawild/icons")
@@ -36,17 +37,23 @@ library(icons)
 #download_fontawesome()
 ```
 
+class: inverse middle center
+
 #  Déroulé
 
-- Présentation du concept de l'analyse territoriale multiscalaire
-- Historique des travaux
-- Arrivée de mta
-- Cas d'étude
+<br>
+
+### Concept et historique des travaux
+### MTA
+### Cas d'étude
 
 ---
 
+class: inverse middle center
 
-# Concept
+# Concept et historique des travaux
+
+<img src="fig/concept.svg" width="100" />
 
 
 ---
@@ -54,7 +61,7 @@ library(icons)
 ## Contexte général
 
 .center[
-<img src="figures/concept1.PNG" width="500" />
+<img src="fig/concept1.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -66,7 +73,7 @@ library(icons)
 ## Contexte général
 
 .center[
-<img src="figures/concept2.PNG" width="500" />
+<img src="fig/concept2.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -77,7 +84,7 @@ library(icons)
 ## Contexte général
 
 .center[
-<img src="figures/concept3.PNG" width="500" />
+<img src="fig/concept3.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -88,7 +95,7 @@ library(icons)
 ## Contexte général
 
 .center[
-<img src="figures/concept4.PNG" width="500" />
+<img src="fig/concept4.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -98,7 +105,7 @@ library(icons)
 ## Contexte territorial
 
 .center[
-<img src="figures/concept5.PNG" width="500" />
+<img src="fig/concept5.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -108,7 +115,7 @@ library(icons)
 ## Contexte territorial
 
 .center[
-<img src="figures/concept6.PNG" width="500" />
+<img src="fig/concept6.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -118,7 +125,7 @@ library(icons)
 ## Contexte territorial
 
 .center[
-<img src="figures/concept7.PNG" width="500" />
+<img src="fig/concept7.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -128,7 +135,7 @@ library(icons)
 ## Contexte spatial
 
 .center[
-<img src="figures/concept8.PNG" width="500" />
+<img src="fig/concept8.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -138,7 +145,7 @@ library(icons)
 ## Contexte spatial
 
 .center[
-<img src="figures/concept9.PNG" width="500" />
+<img src="fig/concept9.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
 ]
@@ -148,9 +155,18 @@ library(icons)
 ## Contexte spatial
 
 .center[
-<img src="figures/concept10.PNG" width="500" />
+<img src="fig/concept10.PNG" width="500" />
 
 .leg-fig[*Ronan Ysebaert, RIATE, 2021*]
+]
+
+
+---
+
+## Synthèse
+
+.center[
+<img src="fig/synthese.PNG" width="900" />
 ]
 
 
@@ -165,10 +181,10 @@ library(icons)
 
 - **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
 
-- **2000** Création du groupe de recherche HyperCarte
+- **1996** Création du groupe de recherche HyperCarte
 
 .center[
-<img src="figures/steamer.png" height="40" /><img src="figures/mescal.png" height="40" /><img src="figures/geo_cites.png" height="40" /><img src="figures/riate.png" height="30" />
+<img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
 - **2006** : Première version d'HyperAtlas. 
@@ -179,7 +195,7 @@ library(icons)
 
 .pull-right[
 .center[
-<img src="figures/hyperatlas.PNG" width="500" />
+<img src="fig/hyperatlas.PNG" width="500" />
 
 .leg-fig[*HyperAtlas v2*]
 ]
@@ -195,10 +211,10 @@ library(icons)
 
 - **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
 
-- **2000** Création du groupe de recherche HyperCarte
+- **1996** Création du groupe de recherche HyperCarte
 
 .center[
-<img src="figures/steamer.png" height="40" /><img src="figures/mescal.png" height="40" /><img src="figures/geo_cites.png" height="40" /><img src="figures/riate.png" height="30" />
+<img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
 - **2006** : Première version d'HyperAtlas. 
@@ -211,7 +227,7 @@ library(icons)
 
 .pull-right[
 .center[
-<img src="figures/hypercarte.PNG" width="500" />
+<img src="fig/hypercarte.PNG" width="500" />
 
 .leg-fig[[*http://hypercarte.imag.fr/*](http://hypercarte.imag.fr/, le site Web du groupe de recherche)
 ]
@@ -228,10 +244,10 @@ library(icons)
 
 - **1990's** : Travaux de C. Grasland, H. Mathian et J.C François sur la distribution de phénomènes sociaux discrets dans l'espace ([appartenances](http://census.web.ined.fr/debat/Contributions/Avant-Fevrier-1999/Grasland-2.html) et [discontinuités territoriales](https://www.persee.fr/doc/spgeo_0046-2497_1997_num_26_4_1097)).
 
-- **2000** Création du groupe de recherche HyperCarte
+- **1996** Création du groupe de recherche HyperCarte
 
 .center[
-<img src="figures/steamer.png" height="40" /><img src="figures/mescal.png" height="40" /><img src="figures/geo_cites.png" height="40" /><img src="figures/riate.png" height="30" />
+<img src="fig/steamer.png" height="40" /><img src="fig/mescal.png" height="40" /><img src="fig/geo_cites.png" height="40" /><img src="fig/riate.png" height="30" />
 ]
 
 - **2006** : Première version d'HyperAtlas. 
@@ -246,41 +262,48 @@ library(icons)
 
 .pull-right[
 .center[
-<img src="figures/hyperatlas3.PNG" width="500" />
+<img src="fig/hyperatlas3.PNG" width="500" />
 
-.leg-fig[[*Tools and maps / HyperAtlas 3.0 - User Manual, draft*]https://www.espon.eu/sites/default/files/attachments/D3_Draft-User-Manual_11.pdf)
+.leg-fig[
+[*Tools and maps / HyperAtlas 3.0 - User Manual, draft*](https://www.espon.eu/sites/default/files/attachments/D3_Draft-User-Manual_11.pdf)
 ]
 ]
-]
----
-
-## Implémentations  
-
-.pull-left[
-- Contexte transnational / européen : ESPON, [Nordregio](https://www.diva-portal.org/smash/get/diva2:700421/FULLTEXT01.pdf)
-
-- Enseignement des disparités socio-spatiales au sein de l'UE en première. 
-
-]
-
-.pull-right[
-
 ]
 
 ---
+class: inverse middle center
+
+<img src="fig/MTA.PNG" width="250" />
+
+---
+
 
 ## Retour sur expérience d'HyperAtlas
 
 .pull-left[
 
-- Concept de l'analyse multiscalaire facilement appréhendable par une diversité d'acteurs. Beaucoup de demandes d'implémentation.
+.left-column[
+<br>
+<img src="fig/hand_on.svg" width="100" />
+]
 
+.right-column[
 - Une application clic-bouton mûrement réfléchie (parcours utilisateur).
 
-- Un projet interdisciplinaire par essence. 
+- Un projet interdisciplinaire par essence
+
+- Concept de l'analyse multiscalaire facilement appréhendable par une diversité d'acteurs. Implémentations multiples : *[ESPON](https://www.espon.eu/HyperAtlas-3.0), [Parlement Européen](https://www.europarl.europa.eu/thinktank/en/document.html?reference=IPOL-REGI_ET(2007), CGET, [Enseignement](https://www.ac-paris.fr/portail/jcms/p1_986484/enseigner-les-disparites-socio-spatiales-au-sein-de-l-ue-avec-hyperatlas-1ere)...*
+<br><br><br><br>
+]
 ]
 
 .pull-right[
+.left-column[
+<br>
+<img src="fig/hand_back.svg" width="100" />
+]
+
+.right-column[
 
 - Application vieillissante (ergonomie).
 
@@ -289,15 +312,14 @@ library(icons)
 - Une application qui dépend du développement successif de plusieurs ingénieurs (difficile à faire évoluer).
 
 - Export vectoriel des cartes et graphiques impossible sous HyperAtlas. 
+<br><br><br>
+]
 ]
 
 --
 
-**Nécessité de trouver une alternative pour les travaux et analyses exploratoires à toute personne intéressée par ce cadre conceptuel. 
-
----
-
-# MTA
+- Proposer une **alternative** technique pour mener ce type d'analyses : R.  
+- **Ouvrir le code et les méthodes** pour rendre possible d'éventuelles contributions ultérieures. 
 
 ---
 
@@ -309,9 +331,9 @@ library(icons)
 
 - Déposé sur le CRAN en mars 2017.
 
-- 10 fonctions : `gdev`, `tdev`, `sdev`, `bidev`, `mst`, `mas`, `map_bidev`, `map_mst`, `plot_bidev`, `plot_mst` 
+- 10 fonctions : `gdev()`, `tdev()`, `sdev()`, `bidev()`, `mst()`, `mas()`, `map_bidev()`, `map_mst()`, `plot_bidev()`, `plot_mst()` 
 
-- Un jeu de données d'exemple (inégalités de revenu sur la Métropole du Grand Paris)
+- Un jeu de données d'exemple (inégalités de revenu sur la Métropole du Grand Paris : `com()`, `ept()`, `cardist()`)
 
 - 2 vignettes explicatives (concepts théoriques et application)
 
@@ -321,7 +343,7 @@ library(icons)
 
 .pull-right[
 
-<img src="figures/mta_package.PNG" width="500" />
+<img src="fig/mta_package.PNG" width="500" />
 ]
 
 
@@ -329,22 +351,85 @@ library(icons)
 
 ## Développement
 
-```{r, echo = FALSE, eval = FALSE, results='hide'}
+```{r, echo = FALSE, eval = TRUE, results='hide', out.width=500}
 library(deepdep)
 dep <- deepdep("MTA", depth = 6)
-png("figures/deps.png", width  = 600, height = 450)
-plot_dependencies(dep, "circular", same_level = TRUE, reverse = TRUE, main = 'toto')
-dev.off()
+plot_dependencies(dep, "tree", same_level = TRUE, reverse = TRUE)
 ```
 
-.center[
-<img src="figures/deps.png" width=650px />
-]
 
 ---
 
+## Des préalables pour mener une analyse multiscalaire...
+
+.left-column[
+<br>
+<img src="fig/warning.svg" width="50" />
+
+<br><br><br><br><br><br><br>
+<img src="fig/warning.svg" width="50" />
+]
+
+.right-column[
+
+### Thématique
+
+- **Définir un indicateur défini par la variable Z = V/P**, qui correspond à un modèle d'allocation d'une ressource par rapport à une population de référence. La référence implicite de ce type d'analyse étant l'équirépartition. 
+
+- **Identifier des contextes territoriaux** qui font sens d'un point de vue thématique ou politique. 
+
+
+### Technique
+
+- **Jeu de données** : disposer d'un numérateur, d'un dénominateur et d'une variable d'appartenance territoriale. 
+
+- Des **Géométries** associées au jeu de données (calcul de la déviation spatiale : objet `sf`).  
+
+]
+
+---
+class: inverse middle center
 # Exemple d'utilisation
 *Concentration de l'emploi dans la Métropole du Grand Paris*
+
+```{r, echo = FALSE, out.width=450, dpi = 300}
+library(sf)
+library(mapsf)
+
+# Import des données
+com <- st_read("data/data.gpkg", layer = "com", quiet = TRUE)
+epci <- st_read("data/data.gpkg", layer = "epci", quiet = TRUE)
+
+# Filtrer sur Paris
+com <- com[com$LIB_EPCI == "Métropole du Grand Paris",]
+epci <- epci[epci$LIB_EPCI == "Métropole du Grand Paris",]
+
+# Ordre des labels et couleurs pour les EPCI
+epts <- c("Paris", "Est Ensemble", "Grand Paris Grand Est", "Paris Terres d'Envol",   
+          "Plaine Commune", "Boucle Nord de Seine", "Paris Ouest - La Défense", 
+          "Grand Paris Seine Ouest",  "Vallée Sud Grand Paris",  
+          "Grand-Orly Seine Bièvre", "Grand Paris Sud Est Avenir",
+          "Paris Est Marne et Bois")
+
+# couleurs
+cols <- c("#cfcfcf", # Gris (Paris)
+          "#92C8E0", "#7BB6D3", "#64A4C5", "#458DB3", # Bleus (Seine-Saint-Denis)
+          "#A6CC99", "#8CBB80", "#71A966", "#4E9345", # Verts (Hauts-de-Seine)
+          "#F38F84",  "#EF6860",  "#EA3531") # Rouges (Val-de-Marne)
+
+colEpt <- data.frame(epts, cols)
+
+custom <- mf_theme(list(name = "custom", bg = "#395F94", fg = "#395F94",
+                        mar = c(0,0,0,0), inner = TRUE))
+
+mf_theme(custom)
+
+mf_init(com)
+mf_map(x = com, type = "typo", var = "LIB_EPCI_SUB", val_order = epts,
+       pal = cols, border = "white", lwd = 0.2, leg_pos = "n", add = TRUE)
+
+mf_map(epci, col = NA, border = "black", add = TRUE)
+```
 
 ---
 
@@ -450,6 +535,7 @@ com <- com[com$num != 0 & com$denom != 0,]
 com$ratio <- com$num / com$denom  
 
 # Représentation cartographique
+mf_theme("default")
 mf_map(x = com, var = "ratio", type = "choro", 
        breaks = "quantile", nbreaks = 4,
        border = "white", 
@@ -477,7 +563,7 @@ mf_layout(title = paste0("Ratio d'intérêt : concentration d'emploi",
 .pull-left[
 ```{r, eval = FALSE}
 # Déviation générale
-com$gdevrel <- gdev(x = com,  var1 = "num", var2 = "denom", 
+com$gdevrel <- gdev(x = com,  var1 = "num", var2 = "denom",  
                     type = "rel")
 
 # Palette de couleurs pour déviations(origine Color Brewer)
@@ -492,7 +578,10 @@ mf_map(x = com, var = "gdevrel", type = "choro",
        leg_title = paste0("Déviation au contexte général",
                           "\n(100 = moyenne de la MGP)"))
 mf_map(epci, col = NA, lwd = 1, add = TRUE)
-mf_layout(title = "Déviation générale", credits = credits)
+mf_layout(title = paste0("Déviation générale (moyenne = ",
+                         round(sum(com$num) / sum(com$denom), 2),
+                         ")"),
+          credits = credits)
 
 # Labels 
 mf_label(x = com[which.min(com$gdevrel),], var = "NOM_COM",
@@ -522,13 +611,63 @@ mf_map(x = com, var = "gdevrel", type = "choro",
                           "\n(100 = moyenne de la MGP)"))
 mf_map(epci, col = NA, lwd = 1, add = TRUE)
 
-mf_layout(title = "Déviation générale", credits = credits)
+mf_layout(title = paste0("Déviation générale (moyenne = ",
+                         round(sum(com$num) / sum(com$denom), 2),
+                         ")"),
+          credits = credits)
 
 # Labels 
 mf_label(x = com[which.min(com$gdevrel),], var = "NOM_COM", halo = TRUE)
 mf_label(x = com[which.max(com$ratio),], var = "NOM_COM", halo = TRUE)
 ```
 ]
+
+---
+
+## Déviation générale : écart à un seuil spécifique
+
+.pull-left[
+```{r, eval = FALSE}
+# Déviation générale / Assymétrie numérateur - dénominateur
+com$gdevrel2 <- gdev(x = com,  var1 = "num", var2 = "denom", 
+                     type = "rel", ref = 1)
+
+# Cartographie
+mf_map(x = com, var = "gdevrel2", type = "choro", 
+       breaks = c(min(com$gdevrel2), 75, 90, 100, 111, 133, 
+                  max(com$gdevrel2)),
+       border = "white", pal = devpal, 
+       leg_title = paste0("Déviation au contexte général",
+                          "\n(100 = moyenne de la MGP)"))
+mf_map(epci, col = NA, lwd = 1, add = TRUE)
+mf_layout(title = paste0("Déviation générale / ", 
+                         "Assymétrie numérateur dénominateur"),
+          credits = credits)
+```
+
+]
+
+.pull-right[
+```{r, echo = FALSE, dpi = 300}
+# Déviation générale
+com$gdevrel2 <- gdev(x = com,  var1 = "num", var2 = "denom", 
+                     type = "rel", ref = 1)
+
+# Cartographie
+mf_map(x = com, var = "gdevrel2", type = "choro", 
+       breaks = c(min(com$gdevrel2), 75, 90, 100, 111, 133, 
+                  max(com$gdevrel2)),
+       border = "white", pal = devpal, 
+       leg_title = paste0("Déviation au contexte général",
+                          "\n(100 = moyenne de la MGP)"))
+mf_map(epci, col = NA, lwd = 1, add = TRUE)
+mf_layout(title = paste0("Déviation générale / ", 
+                         "Assymétrie numérateur dénominateur"),
+          credits = credits)
+```
+]
+
+
 
 ---
 
@@ -547,7 +686,7 @@ mf_map(x = com, var = "tdevrel", type = "choro",
        border = "white", pal = devpal, 
        leg_title = paste0("Déviation au contexte territorial",
                           "\n(100 = moyenne de l'EPCI",
-                          " d'appartenance"))
+                          " d'appartenance)"))
  
 mf_layout(title = "Déviation territoriale", credits = credits)
 
@@ -581,7 +720,7 @@ mf_map(x = com, var = "tdevrel", type = "choro",
        border = "white", pal = devpal, 
        leg_title = paste0("Déviation au contexte territorial",
                           "\n(100 = moyenne de l'EPCI",
-                          " d'appartenance"))
+                          " d'appartenance)"))
 mf_map(epci, col = NA, lwd = 1, add = TRUE)
 mf_layout(title = "Déviation territoriale", credits = credits)
 
@@ -601,7 +740,7 @@ mf_label(x = df.min, var = "NOM_COM",  halo = TRUE, col = "#135D89")
 
 ---
 
-## Déviation spatiale : contigüité territoriale
+## Déviation spatiale : contiguïté territoriale
 
 .pull-left[
 ```{r, eval = FALSE}
@@ -616,7 +755,7 @@ mf_map(x = com, var = "sdevrel", type = "choro",
        border = "white", pal = devpal, 
        leg_title = paste0("Déviation au contexte territorial",
                           "\n(100 = moyenne des communes",
-                          " contigües"))
+                          " contigües)"))
 mf_layout(title = "Déviation spatiale", credits = credits,
           arrow = FALSE)
 ```
@@ -636,7 +775,7 @@ mf_map(x = com, var = "sdevrel", type = "choro",
        border = "white", pal = devpal, 
        leg_title = paste0("Déviation au contexte territorial",
                           "\n(100 = moyenne des communes",
-                          " contigües"))
+                          " contigües)"))
 mf_layout(title = "Déviation spatiale", credits = credits,
           arrow = FALSE)
 ```
@@ -645,7 +784,7 @@ mf_layout(title = "Déviation spatiale", credits = credits,
 
 ---
 
-## Déviation spatiale : contigüité territoriale
+## Déviation spatiale : contiguïté territoriale
 
 .pull-left[
 ```{r, eval = FALSE}
@@ -749,13 +888,13 @@ mf_map(x = com, var = c("gdevabs", "gdevsign"), type = "prop_typo",
        pal = c("#F6533A","#515FAA"), inches = 0.2,
        val_order = c("Excédent d'emplois", "Déficit d'emplois"),
        val_max = max(abs(com$gdevabs)), leg_val_rnd = -2,
-       leg_pos = c("topleft","bottomleft"), border = "white", 
-       leg_title = c("Sens de la redistribution",
-                     paste0("Emplois à redistribuer pour atteindre",
-                            " l'équilibre")))
+       border = "white", 
+       leg_title = c(paste0("Emplois à redistribuer pour atteindre",
+                            " l'équilibre"),
+                     "Sens de la redistribution"))
 
-mf_layout(title = "Redistributions, déviation générale", credits = credits,
-          arrow = FALSE)       
+mf_layout(title = "Redistributions, déviation générale",
+          credits = credits, arrow = FALSE)       
 ```
 ]
 
@@ -775,10 +914,10 @@ mf_map(x = com, var = c("gdevabs", "gdevsign"), type = "prop_typo",
        pal = c("#F6533A","#515FAA"), inches = 0.2,
        val_order = c("Excédent d'emplois", "Déficit d'emplois"),
        val_max = max(abs(com$gdevabs)), leg_val_rnd = -2,
-       leg_pos = c("topleft","bottomleft"), border = "white", 
-       leg_title = c("Sens de la redistribution",
-                     paste0("Emplois à redistribuer pour atteindre",
-                            " l'équilibre")))
+       border = "white", 
+       leg_title = c(paste0("Emplois à redistribuer pour atteindre",
+                            " l'équilibre"),
+                     "Sens de la redistribution"))
 
 mf_layout(title = "Redistributions, déviation générale", credits = credits,
           arrow = FALSE)   
@@ -826,7 +965,7 @@ ft(x = df[1:10, c("INSEE_COM", "NOM_COM", "LIB_EPCI_SUB", "num", "gdevabs",
 ## Redistributions ? Communes déficitaires d'emploi
 
 ```{r, eval = FALSE}
-# Déviation générale - top 10 des contributeurs...
+# Déviation générale - top 10 des receveurs...
 df <- st_set_geometry(com, NULL)
 # ... Au regard de leur masse de numérateur
 df$gdevabsPerc <- df$gdevabs / df$num * 100
@@ -886,8 +1025,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 1.5 fois au-dessus ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 7
@@ -922,8 +1061,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 1.5 fois au-dessus ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 7
@@ -961,8 +1100,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 1.5 fois au-dessus ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 6
@@ -997,8 +1136,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 1.5 fois au-dessus ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 6
@@ -1037,8 +1176,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 2 fois en-dessous ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 7
@@ -1073,8 +1212,8 @@ mf_legend(type = "typo", pos = "topleft",
                          "et-ou territorial (T)\n",
                          "et-ou spatial (S)"))
 mf_layout(title = paste0("Synthèse multiscalaire" ,
-                         "(deviations + 50 % au-dessus", 
-                         "de la moyenne"),
+                         " (déviations 2 fois en-dessous ", 
+                         "de la moyenne)"),
           credits = credits, arrow = FALSE)
 
 # Ajouter des labels pour mst = 7
@@ -1089,7 +1228,7 @@ mf_label(x = com[com$mst == 7,], var = "NOM_COM",
 
 ```{r, dpi = 300, echo = TRUE, fig.width=17}
 plot_mst(x = com, gdevrel = "gdevrel", tdevrel = "tdevrel", sdevrel = "sdevrel", 
-         lib.var = "NOM_COM", cex.names = .6,
+         lib.var = "NOM_COM", cex.names = .8,
          lib.val = c("Épinay-sur-Seine", "Pierrefitte-sur-Seine", "L'Île-Saint-Denis", "Le Pré-Saint-Gervais",
                      "Ablon-sur-Seine", "Ville-d'Avray", "Périgny"),
          legend.lab = paste0("G = Métropole du Grand Paris, T = EPCI d'appartenance,",
@@ -1132,11 +1271,11 @@ Consultez la fiche [Rzine](https://rysebaert.github.io/mta_rzine) qui développe
 ]
 
 .pull-left[
-<img src="figures/rzine1.PNG" width="500" />
+<img src="fig/rzine1.PNG" width="500" />
 ]
 
 .pull-right[
-<img src="figures/rzine2.PNG" width="500" />
+<img src="fig/rzine2.PNG" width="500" />
 ]
 
 ---
@@ -1146,9 +1285,37 @@ Consultez la fiche [Rzine](https://rysebaert.github.io/mta_rzine) qui développe
 Postez des issues dans le [dépôt GitHub](https://github.com/riatelab/MTA/issues) du package ! 
 
 .center[
-<img src="figures/issues.PNG" width="1000" />
+<img src="fig/issues.PNG" width="1000" />
 ]
 
+---
+
+# Bibliographie - ressources
+
+```{r, load_refs, echo=FALSE, warning=FALSE}
+library(RefManageR)
+file <- system.file("Bib", "biblatexExamples.bib", package = "RefManageR")
+
+
+BibOptions(
+  check.entries = FALSE, 
+  cite.style = "authoryear", 
+  style = "markdown",
+  hyperlink = FALSE, 
+  dashed = FALSE)
+bib <- ReadBib("biblio.bib", check = FALSE)
+```
+
+.small[
+```{r, results = "asis", echo=FALSE}
+print(bib[key = c("grasland1997", "ysebaert2011", "grasland2004", "ysebaert2021",
+                  "martin2004", "thomas2008", "lerubrus2011", "grasland2005",
+                  "ysebaert2021b", "ysebaert2021c")], 
+      .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+```
+]
 ---
 <br><br><br>
 .center[
@@ -1158,22 +1325,23 @@ Postez des issues dans le [dépôt GitHub](https://github.com/riatelab/MTA/issue
 <br><br>
 
 .medium[
-Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan), [R Markdown](https://rmarkdown.rstudio.com/) et une adaptation du thème [css rutgers](https://github.com/jvcasillas/ru_xaringan)
+Présentation réalisée avec [xaringan](https://github.com/yihui/xaringan) et [R Markdown](https://rmarkdown.rstudio.com/).
 
-Contenu et mise en forme s'inspirant de [@oliviergimenez](https://github.com/oliviergimenez), [State of the R](https://stateofther.github.io/), [R Views](https://rviews.rstudio.com/2018/03/08/cran-package-metadata/) et l'ensemble de la documentation associée à R Markdown.
+*css* s'inspirant du thème [css rutgers](https://github.com/jvcasillas/ru_xaringan) et diverses adaptations proposées par [@oliviergimenez](https://github.com/oliviergimenez).
 ]
 ]
 
 <br><br><br><br>
 
 .left[
-.small[
+.medium[
 |                                                                                                            |                                   |
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
 | `r icons::fontawesome("envelope")` | [ronan.ysebaert@cnrs.fr](mailto:ronan.ysebaert@cnrs.fr)       |
 | `r icons::fontawesome("home")` | [riate.cnrs.fr/](https://riate.cnrs.fr/) |
 | `r icons::fontawesome("gitlab")` | [gitlab.huma-num.fr/rysebaert](https://gitlab.huma-num.fr/rysebaert)                         |
 | `r icons::fontawesome("github")` | [@rysebaert](https://github.com/rysebaert) |
-| `r icons::fontawesome("file-powerpoint")` | [https://github.com/rysebaert/mta_geoteca](https://github.com/rysebaert/mta_geoteca) 
+| `r icons::fontawesome("file-powerpoint")` | [rysebaert.github.io/mta_geoteca](https://rysebaert.github.io/mta_geoteca) 
+| `r icons::fontawesome("r-project")` | [rysebaert.github.io/mta_geoteca/script](https://github.com/rysebaert/mta_geoteca/script.R) 
 
 ]]

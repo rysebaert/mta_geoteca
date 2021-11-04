@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 210 297" style="enable-background:new 0 0 210 297;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;stroke:#3C3C3B;stroke-width:1.1454;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);fill:#FAB51C;}
+	.st2{clip-path:url(#SVGID_2_);fill:#E30917;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'Arial-BoldMT';}
+	.st6{font-size:19.4726px;}
+	.st7{fill:#3C3C3B;}
+	.st8{font-size:27.4907px;}
+	.st9{clip-path:url(#SVGID_2_);fill:none;stroke:#3C3C3B;stroke-width:3.4363;stroke-miterlimit:10;}
+	.st10{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.1636;stroke-miterlimit:10;}
+	
+		.st11{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:9.1636;stroke-miterlimit:10;stroke-dasharray:13.7783,13.7783;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="-87,318.5 297.06,318.5 297.06,-20 -87,-20 -87,318.5 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon class="st0" points="291.62,313.62 -82.41,313.62 -82.41,-15.41 291.62,-15.41 291.62,313.62 		"/>
+		<polygon class="st1" points="292.19,312.47 -83.84,312.47 -83.84,-15.7 292.19,-15.7 292.19,312.47 		"/>
+		<polygon class="st2" points="104.46,148.96 42.17,148.96 42.17,94.27 104.46,94.27 104.46,148.96 		"/>
+		<g class="st3">
+			<text transform="matrix(1.0024 0 0 1 40.9822 127.2271)"><tspan x="0" y="0" class="st4 st5 st6">+</tspan><tspan x="11.45" y="0" class="st4 st5 st6"> </tspan><tspan x="16.88" y="0" class="st4 st5 st6">1</tspan><tspan x="27.75" y="0" class="st4 st5 st6">,</tspan><tspan x="33.18" y="0" class="st4 st5 st6">5</tspan><tspan x="44.05" y="0" class="st4 st5 st6">%</tspan></text>
+		</g>
+		<g class="st3">
+			<text transform="matrix(1.0024 0 0 1 85.365 247.1333)"><tspan x="0" y="0" class="st7 st5 st8">X</tspan><tspan x="18.34" y="0" class="st7 st5 st8"> </tspan><tspan x="26.06" y="0" class="st7 st5 st8">=</tspan><tspan x="42.11" y="0" class="st7 st5 st8"> </tspan><tspan x="49.83" y="0" class="st7 st5 st8">98</tspan><tspan x="80.19" y="0" class="st7 st5 st8">,</tspan><tspan x="87.91" y="0" class="st7 st5 st8">5</tspan></text>
+		</g>
+		<line class="st9" x1="86.38" y1="219.12" x2="103.89" y2="219.12"/>
+		<polyline class="st10" points="291.62,306.46 291.62,313.33 284.73,313.33 		"/>
+		<line class="st11" x1="271.24" y1="313.33" x2="-69.2" y2="313.33"/>
+		<polyline class="st10" points="-75.81,313.33 -82.69,313.33 -82.69,306.46 		"/>
+		<line class="st11" x1="-82.69" y1="292.71" x2="-82.69" y2="-1.67"/>
+		<polyline class="st10" points="-82.69,-8.54 -82.69,-15.41 -75.81,-15.41 		"/>
+		<line class="st11" x1="-62.31" y1="-15.41" x2="278.12" y2="-15.41"/>
+		<polyline class="st10" points="284.73,-15.41 291.62,-15.41 291.62,-8.54 		"/>
+		<line class="st11" x1="291.62" y1="4.92" x2="291.62" y2="299.59"/>
+	</g>
+</g>
+</svg>
