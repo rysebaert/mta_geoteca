@@ -13,7 +13,6 @@ library(mapsf)
 # Données accessibles ici : https://github.com/rysebaert/mta_geoteca
 # data/data.gpkg 
 
-
 ##############################################################################
 #  1 - Import des données, initialisation de l'analyse 
 ##############################################################################
