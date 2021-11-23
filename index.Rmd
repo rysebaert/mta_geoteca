@@ -431,6 +431,31 @@ mf_map(epci, col = NA, border = "black", add = TRUE)
 
 ---
 
+## Un exemple reproductible
+
+Le code présenté est accessible sur le dépôt de la présentation :
+**[github.com/rysebaert/mta_geoteca](https://github.com/rysebaert/mta_geoteca)**
+
+.left-column[
+.medium[
+1. Téléchargez le dépôt (.zip)
+
+2. Décompressez le .zip
+
+3. Ouvrez le fichier project.Rproj
+
+4. Importez le fichier script.R
+]
+]
+
+.right-column[
+.center[
+<img src="fig/reproducibility.PNG" width="600" />
+]
+]
+
+---
+
 .pull-left[
 ## Librairies utilisées
 
@@ -882,13 +907,14 @@ com$gdevsign <- ifelse(com$gdevabs > 0, "Excédent d'emplois",
 
 # Cartographie
 mf_map(epci, col = "peachpuff", border = "black", lwd = 1)
-mf_map(x = com, var = c("gdevabs", "gdevsign"), type = "prop_typo",
+mf_map(x = com, var = c("gdevabs", "gdevsign"), 
+       type = "prop_typo",
        pal = c("#F6533A","#515FAA"), inches = 0.2,
        val_order = c("Excédent d'emplois", "Déficit d'emplois"),
        val_max = max(abs(com$gdevabs)), leg_val_rnd = -2,
        border = "white", 
-       leg_title = c(paste0("Emplois à redistribuer pour atteindre",
-                            " l'équilibre"),
+       leg_title = c(paste0("Emplois à redistribuer pour", 
+                            "atteindre l'équilibre"),
                      "Sens de la redistribution"))
 
 mf_layout(title = "Redistributions, déviation générale",
@@ -1233,6 +1259,22 @@ plot_mst(x = com, gdevrel = "gdevrel", tdevrel = "tdevrel", sdevrel = "sdevrel",
                              "S : Communes contigües (100 = moyenne du contexte)"))
 ```
 
+
+---
+
+### MTA : un révélateur d'inégalités ?
+
+Un commentaire sur Pierrefitte-sur-Seine (93) posté par un internaute sur [ville-ideale.fr](https://www.ville-ideale.fr/pierrefitte-sur-seine_93059)...
+
+.center[
+<img src="fig/pierrefite.PNG" width="800" />
+]
+
+Et un autre sur [Périgny (94)](https://www.ville-ideale.fr/perigny_94056)
+
+.center[
+<img src="fig/perigny.PNG" width="800" />
+]
 
 ---
 
