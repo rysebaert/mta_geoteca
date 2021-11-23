@@ -1,5 +1,5 @@
 ###############################################################################
-#                    SCRIPT R JOUE DANS LA PRESENTATION                       #
+#                    SCRIPT R JOUÉ DANS LA PRESENTATION                       #
 #                    Analyse Territoriale Multiscalaire                       #                  
 #    Présentation du package R MTA, son contexte de production et son usage   #
 #                        R. YSEBAERT, NOVEMBRE 2021                           #
